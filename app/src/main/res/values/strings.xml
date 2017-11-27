@@ -3,4 +3,7 @@
     <string name="lblPreg1">Pregunta 1</string>
     <string name="txtPreg1">¿?</string>
     <string name="btnAcep">ACEPTAR</string>
+    <string name="btnSelec">SELECCIONA IMAGEN</string>
+    <string name="lblUsu">Introduzca su nombre de usuario</string>
+    <string name="lblImg">Seleccione su foto de perfil</string>
 </resources>

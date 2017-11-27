@@ -12,54 +12,29 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/lblPreg1"
+            android:id="@+id/txtPrinci"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="@string/lblPreg1" />
+            android:text="Practica android"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/txtPreg1"
+        <ListView
+            android:id="@+id/lstOpc"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="@string/txtPreg1"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="30dp" />
-
-        <RadioGroup
-            android:id="@+id/rd1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <RadioButton
-                android:id="@+id/rb1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="si" />
-
-            <RadioButton
-                android:id="@+id/rb2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="tal vez" />
-
-            <RadioButton
-                android:id="@+id/rb3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="no" />
-        </RadioGroup>
+            android:layout_height="323dp" />
 
         <Button
-            android:id="@+id/btnAcep1"
+            android:id="@+id/btnAcep"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="pulsaAcep"
-            android:text="@string/btnAcep" />
+            android:layout_below="@+id/txtPrinci"
+            android:layout_centerHorizontal="true"
+            android:onClick="pulsaBoton"
+            android:text="@string/btnAcep"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="203dp" />
     </LinearLayout>
-
 </android.support.constraint.ConstraintLayout>
