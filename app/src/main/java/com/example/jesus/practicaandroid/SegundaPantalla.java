@@ -25,6 +25,12 @@ public class SegundaPantalla extends AppCompatActivity {
         final String[] datos = new String[]{"Acceso a Datos","Android Studio","Desarrollo de Interfaces"};
         ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_checked, datos);
 
+        /*
+        final String[] datos = new String[]{"Acceso a Datos","Android Studio","Desarrollo de Interfaces"};
+        final Integer[] img = new Integer[]{R.drawable.java,R.drawable.c,R.drawable.go};
+        ArrayAdapter adaptador = new ArrayAdapter(this, datos, img);
+        */
+
         //btnAcep = (Button) findViewById(R.id.btnAcep);
         lst = (ListView) findViewById(R.id.lstOpc);
         lblPrinci = (TextView) findViewById(R.id.lblPrinci);
