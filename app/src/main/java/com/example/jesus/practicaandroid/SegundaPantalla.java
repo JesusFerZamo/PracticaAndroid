@@ -13,7 +13,7 @@ public class SegundaPantalla extends AppCompatActivity {
 
     //Button btnAcep;
     ListView lst;
-    TextView txtPrinci;
+    TextView lblPrinci;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,35 +27,25 @@ public class SegundaPantalla extends AppCompatActivity {
 
         //btnAcep = (Button) findViewById(R.id.btnAcep);
         lst = (ListView) findViewById(R.id.lstOpc);
-        txtPrinci = (TextView) findViewById(R.id.txtPrinci);
-
-        String nombre = getIntent().getStringExtra("nombre");
-        txtPrinci.setText(nombre);
+        lblPrinci = (TextView) findViewById(R.id.lblPrinci);
 
         lst.setAdapter(adaptador);
 
-
         lst.setOnItemClickListener(
                 new AdapterView.OnItemClickListener() {
-                    @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                         if (position == 0) {
                             // Abre una nueva Activity:
-                            Intent myIntent = new Intent(view.getContext(), PrimeraPantalla.class);
-                            startActivity(myIntent);
+                            Intent inten1 = new Intent(view.getContext(), TerceraPantalla.class);
+                            startActivity(inten1);
                         } else if (position == 1) {
                             // Abre una nueva Activity:
-                            Intent myIntent = new Intent(view.getContext(), TerceraPantalla.class);
+                            //Intent inten2 = new Intent(view.getContext(), TerceraPantalla.class);
+                            //startActivity(inten2);
                         }
                     }
-
-
                 } );
-
     }
 
-
 }
-
-

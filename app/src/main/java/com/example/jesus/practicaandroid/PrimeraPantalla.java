@@ -27,15 +27,13 @@ public class PrimeraPantalla extends AppCompatActivity {
         txtUsu = (EditText) findViewById(R.id.txtUsu);
     }
     public void pulsaAcep(View v) {
-
         Intent inten = new Intent(getApplicationContext(),SegundaPantalla.class);
-        inten.putExtra("nombre",txtUsu.getText());
+        //inten.putExtra("nombre",txtUsu.getText().toString());
         startActivity(inten);
     }
     public void pulsaSeleccionar(View v) {
         cargarImagen();
     }
-
 
     private void cargarImagen() {
         Intent intencion = new Intent(Intent.ACTION_PICK,android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);

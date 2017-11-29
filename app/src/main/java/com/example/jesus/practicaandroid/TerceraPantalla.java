@@ -6,12 +6,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class TerceraPantalla extends AppCompatActivity {
 
     Button btnAcep1;
     RadioButton rb3;
+    TextView lblPreg1;
+
     Integer correcta = 0;
     Integer incorrecta = 0;
 
@@ -24,6 +27,7 @@ public class TerceraPantalla extends AppCompatActivity {
     public void iniciarUI(){
         btnAcep1 = (Button) findViewById(R.id.btnAcep1);
         rb3 = (RadioButton) findViewById(R.id.rb3);
+        lblPreg1 = (TextView) findViewById(R.id.lblPreg1);
     }
     public void pulsaAcep(View v){
         RadioGroup rd1 = (RadioGroup) findViewById(R.id.rd1);

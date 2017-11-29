@@ -12,9 +12,10 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/txtPrinci"
+            android:id="@+id/lblPrinci"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="@string/lblPreg1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -25,15 +26,5 @@
             android:layout_width="match_parent"
             android:layout_height="323dp" />
 
-        <Button
-            android:id="@+id/btnAcep"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txtPrinci"
-            android:layout_centerHorizontal="true"
-            android:onClick="pulsaBoton"
-            android:text="@string/btnAcep"
-            tools:layout_editor_absoluteX="148dp"
-            tools:layout_editor_absoluteY="203dp" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
