@@ -48,5 +48,12 @@
             android:layout_height="wrap_content"
             android:onClick="pulsaSeleccionar"
             android:text="@string/btnSelec" />
+
+        <Button
+            android:id="@+id/btnAceptar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="pulsaAcep"
+            android:text="@string/btnAcep" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

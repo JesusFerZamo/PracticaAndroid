@@ -7,15 +7,18 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class SegundaPantalla extends AppCompatActivity {
+
     Button btnAcep;
     ListView lst;
+    TextView txtPrinci;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_primera_pantalla);
+        setContentView(R.layout.activity_segunda_pantalla);
         iniciarUI();
     }
     public void iniciarUI(){
@@ -24,6 +27,10 @@ public class SegundaPantalla extends AppCompatActivity {
 
         btnAcep = (Button) findViewById(R.id.btnAcep);
         lst = (ListView) findViewById(R.id.lstOpc);
+        txtPrinci = (TextView) findViewById(R.id.txtPrinci);
+
+        String nombre = getIntent().getStringExtra("nombre");
+        txtPrinci.setText(nombre);
 
         lst.setAdapter(adaptador);
     }
