@@ -75,32 +75,29 @@
                     tools:layout_editor_absoluteX="0dp"
                     tools:layout_editor_absoluteY="30dp" />
 
-                <RadioGroup
-                    android:id="@+id/rd2"
+                <CheckBox
+                    android:id="@+id/ch1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:text="@string/ch1" />
 
-                    <RadioButton
-                        android:id="@+id/rb4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/rb4" />
+                <CheckBox
+                    android:id="@+id/ch2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ch2" />
 
-                    <RadioButton
-                        android:id="@+id/rb5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/rb5" />
+                <CheckBox
+                    android:id="@+id/ch3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ch3" />
 
-                    <RadioButton
-                        android:id="@+id/rb6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/rb6" />
-                </RadioGroup>
+                <CheckBox
+                    android:id="@+id/ch4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ch4" />
 
                 <LinearLayout
                     android:layout_width="match_parent"

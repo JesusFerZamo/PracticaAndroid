@@ -38,7 +38,7 @@ public class PrimeraPantalla extends AppCompatActivity {
     private void cargarImagen() {
         Intent intencion = new Intent(Intent.ACTION_PICK,android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         intencion.setType("image/");
-        startActivityForResult(intencion.createChooser(intencion,"Selecciona la imagen"),10);
+        startActivityForResult(intencion.createChooser(intencion,"Selecciona la galería"),10);
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

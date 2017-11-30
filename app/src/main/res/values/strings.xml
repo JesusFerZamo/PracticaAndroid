@@ -7,9 +7,10 @@
     <string name="rb1">Sí</string>
     <string name="rb2">No</string>
     <string name="rb3">Tal vez</string>
-    <string name="rb4">Sí</string>
-    <string name="rb5">No</string>
-    <string name="rb6">Tal vez</string>
+    <string name="ch1">Java</string>
+    <string name="ch2">C++</string>
+    <string name="ch3">CSS</string>
+    <string name="ch4">HTML</string>
     <string name="rb7">Sí</string>
     <string name="rb8">No</string>
     <string name="rb9">Tal vez</string>
