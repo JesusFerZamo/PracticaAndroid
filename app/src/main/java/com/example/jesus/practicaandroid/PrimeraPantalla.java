@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class PrimeraPantalla extends AppCompatActivity {
 
@@ -15,7 +16,6 @@ public class PrimeraPantalla extends AppCompatActivity {
     Button btnAceptar;
     EditText txtUsu;
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_primera_pantalla);
@@ -27,9 +27,11 @@ public class PrimeraPantalla extends AppCompatActivity {
         txtUsu = (EditText) findViewById(R.id.txtUsu);
     }
     public void pulsaAcep(View v) {
-        Intent inten = new Intent(getApplicationContext(),SegundaPantalla.class);
-        //inten.putExtra("nombre",txtUsu.getText().toString());
-        startActivity(inten);
+        Intent intencion = new Intent(getApplicationContext(),SegundaPantalla.class);
+        //Bitmap bitmap = ((BitmapDrawable)imagen.getDrawable()).getBitmap();
+        intencion.putExtra("nombre",txtUsu.getText().toString());
+        //intencion.putExtra("imagen",bitmap);
+        startActivity(intencion);
     }
     public void pulsaSeleccionar(View v) {
         cargarImagen();
@@ -43,9 +45,10 @@ public class PrimeraPantalla extends AppCompatActivity {
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(resultCode==RESULT_OK){
-            Uri path=data.getData();
+        if(resultCode==RESULT_OK) {
+            Uri path = data.getData();
             imagen.setImageURI(path);
+            Toast.makeText(this, "BONITA IMAGEN", Toast.LENGTH_SHORT).show();
         }
     }
 

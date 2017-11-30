@@ -11,14 +11,15 @@ import android.widget.TextView;
 
 public class SegundaPantalla extends AppCompatActivity {
 
-    //Button btnAcep;
     ListView lst;
     TextView lblPrinci;
+    static String nombre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segunda_pantalla);
+        nombre = getIntent().getStringExtra("nombre");
         iniciarUI();
     }
     public void iniciarUI(){
@@ -40,11 +41,11 @@ public class SegundaPantalla extends AppCompatActivity {
         lst.setOnItemClickListener(
                 new AdapterView.OnItemClickListener() {
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
                         if (position == 0) {
                             // Abre una nueva Activity:
-                            Intent inten1 = new Intent(view.getContext(), TerceraPantalla.class);
-                            startActivity(inten1);
+                            Intent intencion1 = new Intent(view.getContext(), TerceraPantalla.class);
+                            intencion1.putExtra("nombre",nombre);
+                            startActivity(intencion1);
                         } else if (position == 1) {
                             // Abre una nueva Activity:
                             //Intent inten2 = new Intent(view.getContext(), TerceraPantalla.class);

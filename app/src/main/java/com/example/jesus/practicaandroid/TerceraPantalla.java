@@ -1,12 +1,12 @@
 package com.example.jesus.practicaandroid;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,10 +23,13 @@ public class TerceraPantalla extends AppCompatActivity {
     Integer correcta = 0;
     Integer incorrecta = 0;
 
+    static String nombre;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tercera_pantalla);
+        nombre = getIntent().getStringExtra("nombre");
         iniciarUI();
     }
     public void iniciarUI(){
@@ -39,13 +42,6 @@ public class TerceraPantalla extends AppCompatActivity {
         lblPreg1 = (TextView) findViewById(R.id.lblTest1);
     }
     public void pulsaAcep(View v){
-        RadioGroup rd1 = (RadioGroup) findViewById(R.id.rd1);
-        RadioGroup rd3 = (RadioGroup) findViewById(R.id.rd3);
-        RadioGroup rd4 = (RadioGroup) findViewById(R.id.rd4);
-
-        //String txtCorrecta = rb3.getText().toString();
-        String txtCorrecta = "Correcta";
-        String txtIncorrecta = "Incorrecta";
 
         if (rb3.isChecked()){
             correcta += 1;
@@ -72,5 +68,8 @@ public class TerceraPantalla extends AppCompatActivity {
             incorrecta += 1;
         }
         Toast.makeText(this, "Tienes "+correcta+" preguntas correctas y "+incorrecta+ " preguntas incorrectas", Toast.LENGTH_SHORT).show();
+        Intent intencion = new Intent(getApplicationContext(),UltimaPantalla.class);
+        intencion.putExtra("nombre",nombre);
+        startActivity(intencion);
     }
 }

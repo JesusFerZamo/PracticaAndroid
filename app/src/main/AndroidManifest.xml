@@ -20,7 +20,7 @@
         </activity>
         <activity android:name=".TerceraPantalla" />
         <activity android:name=".SegundaPantalla" />
-        <activity android:name=".ListAdapter"></activity>
+        <activity android:name=".UltimaPantalla"></activity>
     </application>
 
 </manifest>

@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Practica Android</string>
-    <string name="txtPreg1">¿?</string>
-    <string name="txtPreg2">¿?</string>
-    <string name="txtPreg3">¿?</string>
-    <string name="txtPreg4">¿?</string>
+    <string name="lblPreg1">¿?</string>
+    <string name="lblPreg2">¿?</string>
+    <string name="lblPreg3">¿?</string>
+    <string name="lblPreg4">¿?</string>
     <string name="rb1">Sí</string>
     <string name="rb2">No</string>
     <string name="rb3">Tal vez</string>
