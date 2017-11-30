@@ -30,7 +30,8 @@ public class PrimeraPantalla extends AppCompatActivity {
         Intent intencion = new Intent(getApplicationContext(),SegundaPantalla.class);
         //Bitmap bitmap = ((BitmapDrawable)imagen.getDrawable()).getBitmap();
         intencion.putExtra("nombre",txtUsu.getText().toString());
-        //intencion.putExtra("imagen",bitmap);
+        //intencion.putExtra("bitMap",bitmap);
+        //intencion.putExtra("imagen", (Parcelable) imagen);
         startActivity(intencion);
     }
     public void pulsaSeleccionar(View v) {

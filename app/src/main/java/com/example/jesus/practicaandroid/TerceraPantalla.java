@@ -22,6 +22,8 @@ public class TerceraPantalla extends AppCompatActivity {
 
     Integer correcta = 0;
     Integer incorrecta = 0;
+    String correc;
+    String incorrec;
 
     static String nombre;
 
@@ -68,8 +70,12 @@ public class TerceraPantalla extends AppCompatActivity {
             incorrecta += 1;
         }
         Toast.makeText(this, "Tienes "+correcta+" preguntas correctas y "+incorrecta+ " preguntas incorrectas", Toast.LENGTH_SHORT).show();
+        correc = String.valueOf(correcta);
+        incorrec = String.valueOf(incorrecta);
         Intent intencion = new Intent(getApplicationContext(),UltimaPantalla.class);
         intencion.putExtra("nombre",nombre);
+        intencion.putExtra("correcta",correc);
+        intencion.putExtra("incorrecta",incorrec);
         startActivity(intencion);
     }
 }
