@@ -1,9 +1,26 @@
 <resources>
     <string name="app_name">Practica Android</string>
-    <string name="lblPreg1">Pregunta 1</string>
     <string name="txtPreg1">¿?</string>
+    <string name="txtPreg2">¿?</string>
+    <string name="txtPreg3">¿?</string>
+    <string name="txtPreg4">¿?</string>
+    <string name="rb1">Sí</string>
+    <string name="rb2">No</string>
+    <string name="rb3">Tal vez</string>
+    <string name="rb4">Sí</string>
+    <string name="rb5">No</string>
+    <string name="rb6">Tal vez</string>
+    <string name="rb7">Sí</string>
+    <string name="rb8">No</string>
+    <string name="rb9">Tal vez</string>
+    <string name="rb10">Sí</string>
+    <string name="rb11">No</string>
+    <string name="rb12">Tal vez</string>
     <string name="btnAcep">ACEPTAR</string>
+
     <string name="btnSelec">SELECCIONA IMAGEN</string>
     <string name="lblUsu">Introduzca su nombre de usuario</string>
     <string name="lblImg">Seleccione su foto de perfil</string>
+    <string name="lblPrinci">Selecciona el test que desee realizar</string>
+    <string name="lblTest1">Test de Programación</string>
 </resources>
