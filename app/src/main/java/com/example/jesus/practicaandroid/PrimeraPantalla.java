@@ -6,11 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class PrimeraPantalla extends AppCompatActivity {
 
     Button btnAceptar;
     EditText txtUsu;
+    String txtSaludo = "Bienvenido";
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,7 @@ public class PrimeraPantalla extends AppCompatActivity {
         txtUsu = (EditText) findViewById(R.id.txtUsu);
     }
     public void pulsaAcep(View v) {
+        Toast.makeText(this, txtSaludo+ " "+txtUsu.getText(), Toast.LENGTH_SHORT).show();
         Intent intencion = new Intent(getApplicationContext(),SegundaPantalla.class);
         intencion.putExtra("nombre",txtUsu.getText().toString());
         startActivity(intencion);
