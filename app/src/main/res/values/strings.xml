@@ -19,9 +19,7 @@
     <string name="rb12">Tal vez</string>
     <string name="btnAcep">ACEPTAR</string>
 
-    <string name="btnSelec">SELECCIONA IMAGEN</string>
     <string name="lblUsu">Introduzca su nombre de usuario</string>
-    <string name="lblImg">Seleccione su foto de perfil</string>
     <string name="lblPrinci">Selecciona el test que desee realizar</string>
     <string name="lblTest1">Test de Programación</string>
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Practica Android</string>
+    <string name="btnUrl">SOLUZIONE</string>
+    <string name="btnVolver">PROVA</string>
+    <string name="lblUrl">Clicca qui per vedere le soluzioni</string>
+    <string name="lblVolver">Clicca qui per risolvere un altro test</string>
+    <string name="lblIncorrec">Scorretto</string>
+    <string name="lblCorrec">Corretto</string>
+    <string name="lblUsuFinal">Utente</string>
+    <string name="lblTest1">Test di programmazione</string>
+    <string name="lblPrinci">Seleziona il test che desideri realizzare</string>
+    <string name="lblUsu">Inserisci il tuo nome utente</string>
+    <string name="btnAcep">ACCETTARE</string>
+</resources>
