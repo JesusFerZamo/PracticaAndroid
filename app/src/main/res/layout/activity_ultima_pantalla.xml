@@ -12,6 +12,12 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblTest1" />
+
+        <TextView
             android:id="@+id/lblUsuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -35,6 +41,7 @@
             android:id="@+id/btnVolver"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="pulsaTest"
             android:text="@string/btnVolver" />
 
         <Button

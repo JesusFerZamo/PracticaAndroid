@@ -13,7 +13,8 @@ public class UltimaPantalla extends AppCompatActivity {
     TextView lblUsu;
     TextView lblCorrecta;
     TextView lblIncorrecta;
-    Button btn;
+    Button btnVolver;
+    Button btnUrl;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,12 +31,18 @@ public class UltimaPantalla extends AppCompatActivity {
     }
 
     public void iniciarUI() {
-        lblUsu = (TextView) findViewById(R.id.lblUsu);
+        lblUsu = (TextView) findViewById(R.id.lblUsuario);
         lblCorrecta = (TextView) findViewById(R.id.lblCorrec);
         lblIncorrecta = (TextView) findViewById(R.id.lblIncorrec);
-        btn = (Button) findViewById(R.id.btn);
+        btnVolver = (Button) findViewById(R.id.btnVolver);
+        btnUrl = (Button) findViewById(R.id.btnUrl);
     }
-    
+
+    public void pulsaTest(View v){
+        Intent intencion = new Intent(getApplicationContext(),SegundaPantalla.class);
+        startActivity(intencion);
+    }
+
     public void pulsaSoluciones(View v){
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse("https://drive.google.com/file/d/0BxDCvxIkltYsNV9sZFh5RGxnUVE/view?usp=sharing"));

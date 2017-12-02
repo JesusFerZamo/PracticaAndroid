@@ -44,6 +44,8 @@ public class TerceraPantalla extends AppCompatActivity {
         lblPreg1 = (TextView) findViewById(R.id.lblTest1);
     }
     public void pulsaAcep(View v){
+        correcta = 0;
+        incorrecta = 0;
 
         if (rb3.isChecked()){
             correcta += 1;
@@ -73,7 +75,6 @@ public class TerceraPantalla extends AppCompatActivity {
         correc = String.valueOf(correcta);
         incorrec = String.valueOf(incorrecta);
         Intent intencion = new Intent(getApplicationContext(),UltimaPantalla.class);
-        intencion.putExtra("test",lblPreg1.getText().toString());
         intencion.putExtra("nombre",nombre);
         intencion.putExtra("correcta",correc);
         intencion.putExtra("incorrecta",incorrec);
