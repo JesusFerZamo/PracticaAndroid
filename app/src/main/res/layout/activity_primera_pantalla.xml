@@ -28,27 +28,6 @@
             android:ems="10"
             android:inputType="textPersonName" />
 
-        <TextView
-            android:id="@+id/lblImg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/lblImg"
-            android:textSize="18sp" />
-
-        <ImageView
-            android:id="@+id/imgGaleria"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            app:srcCompat="@drawable/img_base" />
-
-        <Button
-            android:id="@+id/btnSelec"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="pulsaSeleccionar"
-            android:text="@string/btnSelec" />
-
         <Button
             android:id="@+id/btnAceptar"
             android:layout_width="match_parent"

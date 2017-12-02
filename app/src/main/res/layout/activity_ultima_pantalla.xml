@@ -12,33 +12,36 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/lblUsu"
+            android:id="@+id/lblUsuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="label" />
-
-        <ImageView
-            android:id="@+id/img"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            app:srcCompat="@drawable/img_base" />
+            android:gravity="center"
+            android:text="@string/lblUsuFinal"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/lblCorrec"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="@string/lblCorrec" />
 
         <TextView
             android:id="@+id/lblIncorrec"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="@string/lblIncorrec" />
 
         <Button
-            android:id="@+id/btn"
+            android:id="@+id/btnVolver"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="@string/btnVolver" />
+
+        <Button
+            android:id="@+id/btnUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="pulsaSoluciones"
+            android:text="@string/btnUrl" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

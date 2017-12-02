@@ -73,6 +73,7 @@ public class TerceraPantalla extends AppCompatActivity {
         correc = String.valueOf(correcta);
         incorrec = String.valueOf(incorrecta);
         Intent intencion = new Intent(getApplicationContext(),UltimaPantalla.class);
+        intencion.putExtra("test",lblPreg1.getText().toString());
         intencion.putExtra("nombre",nombre);
         intencion.putExtra("correcta",correc);
         intencion.putExtra("incorrecta",incorrec);
