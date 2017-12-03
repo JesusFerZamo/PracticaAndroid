@@ -1,7 +1,6 @@
 package com.example.jesus.practicaandroid;
 
 
-import android.widget.BaseAdapter;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,9 +8,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-/**
- * Created by Luisao on 02/12/2017.
- */
+
 
 public class ListViewAdapter extends BaseAdapter {
 

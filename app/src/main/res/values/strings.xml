@@ -34,4 +34,5 @@
     <string name="txtSaludo">Bienvenido</string>
     <string name="txtBien">Eres el mejor</string>
     <string name="txtMal">Debes de estudiar más</string>
+    <string name="txtSelec">Selecciona alguna opción</string>
 </resources>

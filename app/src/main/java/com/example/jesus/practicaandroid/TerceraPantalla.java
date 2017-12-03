@@ -7,10 +7,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class TerceraPantalla extends AppCompatActivity {
+
+    RadioGroup rd1;
+    RadioGroup rd3;
+    RadioGroup rd4;
 
     Button btnAcep1;
     RadioButton rb3;
@@ -26,6 +31,7 @@ public class TerceraPantalla extends AppCompatActivity {
     String incorrec;
     String txtBien;
     String txtMal;
+    String txtSelec;
 
     static String nombre;
 
@@ -38,6 +44,9 @@ public class TerceraPantalla extends AppCompatActivity {
     }
 
     public void iniciarUI(){
+        rd1 = (RadioGroup) findViewById(R.id.rd1);
+        rd3 = (RadioGroup) findViewById(R.id.rd3);
+        rd4 = (RadioGroup) findViewById(R.id.rd4);
         btnAcep1 = (Button) findViewById(R.id.btnAcep);
         rb3 = (RadioButton) findViewById(R.id.rb3);
         ch3 = (CheckBox) findViewById(R.id.ch3);
@@ -50,32 +59,50 @@ public class TerceraPantalla extends AppCompatActivity {
     public void pulsaAcep(View v){
         correcta = 0;
         incorrecta = 0;
+        txtSelec = getString(R.string.txtSelec);
 
-        if (rb3.isChecked()){
-            correcta += 1;
+        if (rd1.getCheckedRadioButtonId() == -1){
+            Toast.makeText(this, txtSelec, Toast.LENGTH_SHORT).show();
         }
         else{
-            incorrecta += 1;
+            if (rb3.isChecked()){
+                correcta += 1;
+            }
+            else{
+                incorrecta += 1;
+            }
         }
+
         if (ch3.isChecked() && ch4.isChecked() ){
             correcta += 1;
         }
         else{
             incorrecta += 1;
         }
-        if (rb7.isChecked()){
-            correcta += 1;
+
+        if (rd3.getCheckedRadioButtonId() == -1) {
+            Toast.makeText(this, txtSelec, Toast.LENGTH_SHORT).show();
         }
         else{
-            incorrecta += 1;
-        }
-        if (rb10.isChecked()){
-            correcta += 1;
-        }
-        else{
-            incorrecta += 1;
+            if (rb7.isChecked()) {
+                correcta += 1;
+            }
+            else{
+                incorrecta += 1;
+            }
         }
 
+        if (rd3.getCheckedRadioButtonId() == -1) {
+            Toast.makeText(this, txtSelec, Toast.LENGTH_SHORT).show();
+        }
+        else{
+            if (rb10.isChecked()){
+                correcta += 1;
+            }
+            else{
+                incorrecta += 1;
+            }
+        }
         if(correcta==4){
             txtBien = getString(R.string.txtBien);
             Toast.makeText(this, txtBien, Toast.LENGTH_SHORT).show();
