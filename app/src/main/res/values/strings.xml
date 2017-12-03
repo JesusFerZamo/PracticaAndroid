@@ -30,4 +30,8 @@
     <string name="lblUrl">Haz clic aquí para ver las soluciones</string>
     <string name="btnVolver">TEST</string>
     <string name="btnUrl">SOLUCIÓN</string>
+
+    <string name="txtSaludo">Bienvenido</string>
+    <string name="txtBien">Eres el mejor</string>
+    <string name="txtMal">Debes de estudiar más</string>
 </resources>

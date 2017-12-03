@@ -77,11 +77,11 @@ public class TerceraPantalla extends AppCompatActivity {
         }
 
         if(correcta==4){
-            txtBien = "Eres un crack";
+            txtBien = getString(R.string.txtBien);
             Toast.makeText(this, txtBien, Toast.LENGTH_SHORT).show();
         }
         if(incorrecta==4){
-            txtMal = "Debes de estudiar más";
+            txtMal = getString(R.string.txtMal);
             Toast.makeText(this, txtMal, Toast.LENGTH_SHORT).show();
         }
 

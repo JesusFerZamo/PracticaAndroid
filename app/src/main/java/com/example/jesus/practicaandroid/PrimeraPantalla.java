@@ -12,11 +12,12 @@ public class PrimeraPantalla extends AppCompatActivity {
 
     Button btnAceptar;
     EditText txtUsu;
-    String txtSaludo = "Bienvenido";
+    String txtSaludo;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_primera_pantalla);
+        txtSaludo = getResources().getString(R.string.txtSaludo);
         iniciarUI();
     }
     public void iniciarUI() {
