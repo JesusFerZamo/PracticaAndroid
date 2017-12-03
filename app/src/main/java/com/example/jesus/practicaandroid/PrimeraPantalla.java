@@ -13,6 +13,7 @@ public class PrimeraPantalla extends AppCompatActivity {
     Button btnAceptar;
     EditText txtUsu;
     String txtSaludo;
+    String txtBlanco;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,10 +26,16 @@ public class PrimeraPantalla extends AppCompatActivity {
         txtUsu = (EditText) findViewById(R.id.txtUsu);
     }
     public void pulsaAcep(View v) {
-        Toast.makeText(this, txtSaludo+ " "+txtUsu.getText(), Toast.LENGTH_SHORT).show();
-        Intent intencion = new Intent(getApplicationContext(),SegundaPantalla.class);
-        intencion.putExtra("nombre",txtUsu.getText().toString());
-        startActivity(intencion);
+        if(txtUsu.getText().toString().matches("")){
+            txtBlanco = getString(R.string.txtBlanco);
+            Toast.makeText(this, txtBlanco, Toast.LENGTH_SHORT).show();
+        }
+        else{
+            Toast.makeText(this, txtSaludo+ " "+txtUsu.getText(), Toast.LENGTH_SHORT).show();
+            Intent intencion = new Intent(getApplicationContext(),SegundaPantalla.class);
+            intencion.putExtra("nombre",txtUsu.getText().toString());
+            startActivity(intencion);
+        }
     }
 
     //Tenemos que añadir imagen
