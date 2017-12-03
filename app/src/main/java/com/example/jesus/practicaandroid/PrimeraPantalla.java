@@ -30,4 +30,6 @@ public class PrimeraPantalla extends AppCompatActivity {
         intencion.putExtra("nombre",txtUsu.getText().toString());
         startActivity(intencion);
     }
+
+    //Tenemos que añadir imagen
 }
