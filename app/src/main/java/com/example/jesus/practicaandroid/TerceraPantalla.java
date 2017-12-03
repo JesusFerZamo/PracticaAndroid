@@ -19,6 +19,8 @@ public class TerceraPantalla extends AppCompatActivity {
 
     Button btnAcep1;
     RadioButton rb3;
+    CheckBox ch1;
+    CheckBox ch2;
     CheckBox ch3;
     CheckBox ch4;
     RadioButton rb7;
@@ -49,6 +51,8 @@ public class TerceraPantalla extends AppCompatActivity {
         rd4 = (RadioGroup) findViewById(R.id.rd4);
         btnAcep1 = (Button) findViewById(R.id.btnAcep);
         rb3 = (RadioButton) findViewById(R.id.rb3);
+        ch1 = (CheckBox) findViewById(R.id.ch1);
+        ch2 = (CheckBox) findViewById(R.id.ch2);
         ch3 = (CheckBox) findViewById(R.id.ch3);
         ch4 = (CheckBox) findViewById(R.id.ch4);
         rb7 = (RadioButton) findViewById(R.id.rb7);
@@ -60,19 +64,12 @@ public class TerceraPantalla extends AppCompatActivity {
         correcta = 0;
         incorrecta = 0;
         txtSelec = getString(R.string.txtSelec);
-
-        if (rd1.getCheckedRadioButtonId() == -1){
-            Toast.makeText(this, txtSelec, Toast.LENGTH_SHORT).show();
+        if (rb3.isChecked()){
+            correcta += 1;
         }
         else{
-            if (rb3.isChecked()){
-                correcta += 1;
-            }
-            else{
-                incorrecta += 1;
-            }
+            incorrecta += 1;
         }
-
         if (ch3.isChecked() && ch4.isChecked() ){
             correcta += 1;
         }
@@ -80,45 +77,48 @@ public class TerceraPantalla extends AppCompatActivity {
             incorrecta += 1;
         }
 
-        if (rd3.getCheckedRadioButtonId() == -1) {
-            Toast.makeText(this, txtSelec, Toast.LENGTH_SHORT).show();
+        if (rb7.isChecked()) {
+            correcta += 1;
         }
         else{
-            if (rb7.isChecked()) {
-                correcta += 1;
-            }
-            else{
-                incorrecta += 1;
-            }
+            incorrecta += 1;
         }
 
-        if (rd3.getCheckedRadioButtonId() == -1) {
+        if (rb10.isChecked()){
+            correcta += 1;
+        }
+        else{
+            incorrecta += 1;
+        }
+
+        if ((rd1.getCheckedRadioButtonId() == -1) || (rd3.getCheckedRadioButtonId() == -1)  || (rd4.getCheckedRadioButtonId() == -1) || ((!ch1.isChecked()) && (!ch2.isChecked()) && (!ch3.isChecked()) && (!ch4.isChecked())))
+        {
             Toast.makeText(this, txtSelec, Toast.LENGTH_SHORT).show();
         }
         else{
-            if (rb10.isChecked()){
-                correcta += 1;
+
+            if(correcta==4){
+                txtBien = getString(R.string.txtBien);
+                Toast.makeText(this, txtBien, Toast.LENGTH_SHORT).show();
             }
-            else{
-                incorrecta += 1;
+            if(incorrecta==4){
+                txtMal = getString(R.string.txtMal);
+                Toast.makeText(this, txtMal, Toast.LENGTH_SHORT).show();
             }
+
+            correc = String.valueOf(correcta);
+            incorrec = String.valueOf(incorrecta);
+            Intent intencion = new Intent(getApplicationContext(),UltimaPantalla.class);
+            intencion.putExtra("nombre",nombre);
+            intencion.putExtra("correcta",correc);
+            intencion.putExtra("incorrecta",incorrec);
+            startActivity(intencion);
+
+
         }
-        if(correcta==4){
-            txtBien = getString(R.string.txtBien);
-            Toast.makeText(this, txtBien, Toast.LENGTH_SHORT).show();
-        }
-        if(incorrecta==4){
-            txtMal = getString(R.string.txtMal);
-            Toast.makeText(this, txtMal, Toast.LENGTH_SHORT).show();
-        }
+
 
         //Toast.makeText(this, "Tienes "+correcta+" preguntas correctas y "+incorrecta+ " preguntas incorrectas", Toast.LENGTH_SHORT).show();
-        correc = String.valueOf(correcta);
-        incorrec = String.valueOf(incorrecta);
-        Intent intencion = new Intent(getApplicationContext(),UltimaPantalla.class);
-        intencion.putExtra("nombre",nombre);
-        intencion.putExtra("correcta",correc);
-        intencion.putExtra("incorrecta",incorrec);
-        startActivity(intencion);
+
     }
 }
