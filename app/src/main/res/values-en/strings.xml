@@ -12,4 +12,7 @@
     <string name="lblPrinci">Select the test you want to perform</string>
     <string name="lblUsu">Introduce your user name</string>
     <string name="btnAcep">ACCEPT</string>
+    <string name="txtSaludo">Welcome</string>
+    <string name="txtBien">You\'re the best</string>
+    <string name="txtMal">You must study more</string>
 </resources>

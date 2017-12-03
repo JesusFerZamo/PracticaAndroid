@@ -12,4 +12,7 @@
     <string name="lblPrinci">Seleziona il test che desideri realizzare</string>
     <string name="lblUsu">Inserisci il tuo nome utente</string>
     <string name="btnAcep">ACCETTARE</string>
+    <string name="txtSaludo">Benvenuto</string>
+    <string name="txtBien">Sei un crack</string>
+    <string name="txtMal">Devi studiare di più</string>
 </resources>

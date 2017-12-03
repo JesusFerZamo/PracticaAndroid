@@ -26,8 +26,8 @@ public class UltimaPantalla extends AppCompatActivity {
 
         iniciarUI();
         lblUsu.setText(nombre);
-        lblCorrecta.setText("Correctas: "+correcta);
-        lblIncorrecta.setText("Incorrectas: "+incorrecta);
+        lblCorrecta.append(" " + correcta);
+        lblIncorrecta.append(" " + incorrecta);
     }
 
     public void iniciarUI() {
