@@ -15,6 +15,22 @@ public class SegundaPantalla extends AppCompatActivity {
     TextView lblPrinci;
     static String nombre;
 
+    ListViewAdapter adapter;
+
+    String[] titulo = new String[]{
+            "Acceso a Datos",
+            "Android Studio",
+            "Desarrollo de Interfaces",
+            "Pokemon",
+    };
+
+    int[] imagenes = {
+            R.drawable.icon01,
+            R.drawable.icon02,
+            R.drawable.icon03,
+            R.drawable.icon04
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,8 +39,8 @@ public class SegundaPantalla extends AppCompatActivity {
         iniciarUI();
     }
     public void iniciarUI(){
-        final String[] datos = new String[]{"Acceso a Datos","Android Studio","Desarrollo de Interfaces"};
-        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_checked, datos);
+      //  final String[] datos = new String[]{"Acceso a Datos","Android Studio","Desarrollo de Interfaces"};
+      //  ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_checked, datos);
 
         /*
         final String[] datos = new String[]{"Acceso a Datos","Android Studio","Desarrollo de Interfaces"};
@@ -33,10 +49,17 @@ public class SegundaPantalla extends AppCompatActivity {
         */
 
         //btnAcep = (Button) findViewById(R.id.btnAcep);
-        lst = (ListView) findViewById(R.id.lstOpc);
+        final ListView lst = (ListView) findViewById(R.id.lstOpc);
+        adapter = new ListViewAdapter(this, titulo, imagenes);
         lblPrinci = (TextView) findViewById(R.id.lblPrinci);
 
-        lst.setAdapter(adaptador);
+        lst.setAdapter(adapter);
+
+
+
+
+
+
 
         lst.setOnItemClickListener(
                 new AdapterView.OnItemClickListener() {
