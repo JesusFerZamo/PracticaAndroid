@@ -17,4 +17,29 @@
         <item name="android:background">@drawable/button</item>
     </style>
 
+    <style name="btnTest" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:background">@color/colorAgua</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorBlanco</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="btnUsuario" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorBlanco</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="btnUrl" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorBlanco</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
 </resources>

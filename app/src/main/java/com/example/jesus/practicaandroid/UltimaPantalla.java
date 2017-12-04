@@ -45,6 +45,11 @@ public class UltimaPantalla extends AppCompatActivity {
         startActivity(intencion);
     }
 
+    public void pulsaUsuario(View v){
+        Intent inten = new Intent(getApplicationContext(),PrimeraPantalla.class);
+        startActivity(inten);
+    }
+
     public void pulsaSoluciones(View v){
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse("https://drive.google.com/file/d/0BxDCvxIkltYsNV9sZFh5RGxnUVE/view?usp=sharing"));
