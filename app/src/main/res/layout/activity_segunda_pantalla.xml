@@ -23,10 +23,18 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <TextView
+            android:id="@+id/lblNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/lblUsuFinal"
+            android:textSize="18sp" />
+
         <ListView
             android:id="@+id/lstOpc"
             android:layout_width="match_parent"
-            android:layout_height="323dp"
+            android:layout_height="262dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp" />
 

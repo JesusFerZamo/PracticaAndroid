@@ -21,7 +21,7 @@
             app:srcCompat="@drawable/logo" />
 
         <TextView
-            android:id="@+id/lblUsu"
+            android:id="@+id/lblNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_alignTop="@+id/lblUsu"
+            android:layout_alignTop="@+id/lblNombre"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
             android:ems="10"

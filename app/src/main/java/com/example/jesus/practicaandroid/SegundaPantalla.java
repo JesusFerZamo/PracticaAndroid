@@ -5,14 +5,13 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
 public class SegundaPantalla extends AppCompatActivity {
 
-    ListView lst;
     TextView lblPrinci;
+    TextView lblUsu;
     static String nombre;
 
     ListViewAdapter adapter;
@@ -37,29 +36,15 @@ public class SegundaPantalla extends AppCompatActivity {
         setContentView(R.layout.activity_segunda_pantalla);
         nombre = getIntent().getStringExtra("nombre");
         iniciarUI();
+        lblUsu.setText(nombre);
     }
     public void iniciarUI(){
-      //  final String[] datos = new String[]{"Acceso a Datos","Android Studio","Desarrollo de Interfaces"};
-      //  ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_checked, datos);
-
-        /*
-        final String[] datos = new String[]{"Acceso a Datos","Android Studio","Desarrollo de Interfaces"};
-        final Integer[] img = new Integer[]{R.drawable.java,R.drawable.c,R.drawable.go};
-        ArrayAdapter adaptador = new ArrayAdapter(this, datos, img);
-        */
-
-        //btnAcep = (Button) findViewById(R.id.btnAcep);
         final ListView lst = (ListView) findViewById(R.id.lstOpc);
         adapter = new ListViewAdapter(this, titulo, imagenes);
         lblPrinci = (TextView) findViewById(R.id.lblPrinci);
+        lblUsu = (TextView) findViewById(R.id.lblNombre);
 
         lst.setAdapter(adapter);
-
-
-
-
-
-
 
         lst.setOnItemClickListener(
                 new AdapterView.OnItemClickListener() {
@@ -75,7 +60,7 @@ public class SegundaPantalla extends AppCompatActivity {
                             //startActivity(inten2);
                         }
                     }
-                } );
+                }
+        );
     }
-
 }

@@ -15,12 +15,13 @@ public class UltimaPantalla extends AppCompatActivity {
     TextView lblIncorrecta;
     Button btnVolver;
     Button btnUrl;
+    String nombre;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ultima_pantalla);
 
-        String nombre = getIntent().getStringExtra("nombre");
+        nombre = getIntent().getStringExtra("nombre");
         String correcta = getIntent().getStringExtra("correcta");
         String incorrecta = getIntent().getStringExtra("incorrecta");
 
@@ -40,6 +41,7 @@ public class UltimaPantalla extends AppCompatActivity {
 
     public void pulsaTest(View v){
         Intent intencion = new Intent(getApplicationContext(),SegundaPantalla.class);
+        intencion.putExtra("nombre",nombre);
         startActivity(intencion);
     }
 
