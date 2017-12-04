@@ -59,7 +59,7 @@ public class UltimaPantalla extends AppCompatActivity {
 
     public void pulsaSoluciones(View v){
         Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse("https://drive.google.com/file/d/0BxDCvxIkltYsNV9sZFh5RGxnUVE/view?usp=sharing"));
+        intent.setData(Uri.parse("https://drive.google.com/file/d/1xzaNZ-f7gnsOR9YPsXVBMkEoSl17Q-tU/view?usp=sharing"));
         startActivity(intent);
     }
 
