@@ -135,6 +135,7 @@
         <item>Pokemon</item>
     </string-array>
     <string name="btnAcep">ACEPTAR</string>
-
+    <string name="lblPrim">Haz clic para escoger otro usuario</string>
+    <string name="btnPrim">USUARIO</string>
 
 </resources>

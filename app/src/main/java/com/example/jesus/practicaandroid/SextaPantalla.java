@@ -41,7 +41,7 @@ public class SextaPantalla extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cuarta_pantalla);
+        setContentView(R.layout.activity_sexta_pantalla);
         nombre = getIntent().getStringExtra("nombre");
         iniciarUI();
     }
