@@ -134,6 +134,7 @@
         <item>Ciencia</item>
         <item>Pokemon</item>
     </string-array>
+    <string name="btnAcep">ACEPTAR</string>
 
 
 </resources>
