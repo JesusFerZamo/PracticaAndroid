@@ -16,20 +16,6 @@ public class SegundaPantalla extends AppCompatActivity {
 
     ListViewAdapter adapter;
 
-    String[] titulo = new String[]{
-            "Acceso a Datos",
-            "Android Studio",
-            "Desarrollo de Interfaces",
-            "Pokemon",
-    };
-
-    int[] imagenes = {
-            R.drawable.icon01,
-            R.drawable.icon02,
-            R.drawable.icon03,
-            R.drawable.icon04
-    };
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +25,15 @@ public class SegundaPantalla extends AppCompatActivity {
         lblUsu.setText(nombre);
     }
     public void iniciarUI(){
+        String[] titulo = getResources().getStringArray(R.array.titulo);
+
+        int[] imagenes = {
+                R.drawable.icon01,
+                R.drawable.icon02,
+                R.drawable.icon03,
+                R.drawable.icon04
+        };
+
         final ListView lst = (ListView) findViewById(R.id.lstOpc);
         adapter = new ListViewAdapter(this, titulo, imagenes);
         lblPrinci = (TextView) findViewById(R.id.lblPrinci);

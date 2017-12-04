@@ -36,4 +36,11 @@
     <string name="txtMal">Debes de estudiar más</string>
     <string name="txtSelec">Selecciona alguna opción</string>
     <string name="txtBlanco">No lo dejes en blanco</string>
+
+    <string-array name="titulo">
+        <item>Acceso a Datos</item>
+        <item>Android Studio</item>
+        <item>Desarrollo de Interfaces</item>
+        <item>Pokemon</item>
+    </string-array>
 </resources>
