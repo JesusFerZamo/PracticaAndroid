@@ -1,12 +1,79 @@
 <resources>
     <string name="app_name">Practica Android</string>
-    <string name="lblPreg1">¿?</string>
+    <string name="lblPreg1">¿Los programas en Java se pueden construir mediante estructuras repetitivas, selectivas y ...?</string>
     <string name="lblPreg2">¿?</string>
-    <string name="lblPreg3">¿?</string>
-    <string name="lblPreg4">¿?</string>
-    <string name="rb1">Sí</string>
-    <string name="rb2">No</string>
-    <string name="rb3">Tal vez</string>
+    <string name="lblPreg3">¿Es Java un lenguaje orientado a objetos?</string>
+    <string name="lblPreg4">¿Cuál es la precisión de un tipo de dato long?</string>
+
+    <string name="rb1_1">Secuenciales</string>
+    <string name="rb1_2">Algorítmicas</string>
+    <string name="rb1_3">Logarítmicas</string>
+    <string name="rb1_4">De cálculo</string>
+
+    <string name="rb2_1">Sí</string>
+    <string name="rb2_2">No</string>
+    <string name="rb2_3">Depende del uso</string>
+    <string name="rb2_4">Depende del compilador</string>
+
+    <string name="rb3_1">8 bit</string>
+    <string name="rb3_2">16 bit</string>
+    <string name="rb3_3">32 bit</string>
+    <string name="rb3_4">64 bit</string>
+
+
+    <string name="lblPreg1h">¿Cuál es el nombre completo de Dumbledore?</string>
+    <string name="lblPreg2h">¿Cuáles de los siguientes personajes tienen sangre mestiza?</string>
+    <string name="lblPreg3h">¿Cuál es el Patronus de Luna Lovegood?</string>
+    <string name="lblPreg4h">¿En qué quiere trabajar Harry cuando acabe la escuela?</string>
+
+    <string name="rb1_1h">Eustaquio de Montoya Federico Dumbledore</string>
+    <string name="rb1_2h">Brian Ronald Percibal Albus Dumbledore</string>
+    <string name="rb1_3h">Albus Percibal Wulfric Brian Dumbledore</string>
+    <string name="rb1_4h">Phineas Wulfric Brian Albus Dumbledore</string>
+
+    <string name="ch1h">Harry Potter</string>
+    <string name="ch2h">Hermione Granger</string>
+    <string name="ch3h">Lord Voldemort</string>
+    <string name="ch4h">Ron Weasley</string>
+
+    <string name="rb2_1h">Un gato</string>
+    <string name="rb2_2h">Una liebre</string>
+    <string name="rb2_3h">Un ciervo</string>
+    <string name="rb2_4h">Un ornitorrinco</string>
+
+    <string name="rb3_1h">Auror</string>
+    <string name="rb3_2h">Ministro de magia</string>
+    <string name="rb3_3h">Agricultor</string>
+    <string name="rb3_4h">Experto en criaturas mágicas</string>
+
+
+    <string name="lblPreg1c">¿Quién fue el primero en decir que la Tierra orbita alrededor del Sol?</string>
+    <string name="lblPreg2c">¿Cuáles de estos hechos son verdad?</string>
+    <string name="lblPreg3c">¿Cuántas patas tiene un araña?</string>
+    <string name="lblPreg4c">Newton tuvo un gran rival contra su teoría de la descomposición de la luz en colores ¿quién fue?</string>
+
+    <string name="rb1_1c">Copérnico</string>
+    <string name="rb1_2c">Galileo</string>
+    <string name="rb1_3c">Aristarco de Samos</string>
+    <string name="rb1_4c">Kepler</string>
+
+    <string name="ch1c">Una pluma y un bolo caen al mismo tiempo al vacío</string>
+    <string name="ch2c">Aurora es un libro de Nietzsche</string>
+    <string name="ch3c">El sistema solar consta de 10 planetas</string>
+    <string name="ch4c">La clonación animal es posible</string>
+
+
+    <string name="rb2_1c">Cuatro</string>
+    <string name="rb2_2c">Seis</string>
+    <string name="rb2_3c">Ocho</string>
+    <string name="rb2_4c">Depende de la especie</string>
+
+    <string name="rb3_1c">Paracelso</string>
+    <string name="rb3_2c">Goethe</string>
+    <string name="rb3_3c">Servet</string>
+    <string name="rb3_4c">Kubala</string>
+
+
     <string name="ch1">Java</string>
     <string name="ch2">C++</string>
     <string name="ch3">CSS</string>
@@ -22,6 +89,7 @@
     <string name="lblUsu">Introduzca su nombre de usuario</string>
     <string name="lblPrinci">Selecciona el test que desee realizar</string>
     <string name="lblTest1">Test de Programación</string>
+    <string name="lblTest1h">Test de Harry Potter</string>
 
     <string name="lblUsuFinal">Usuario</string>
     <string name="lblCorrec">Correctas</string>
@@ -38,9 +106,11 @@
     <string name="txtBlanco">No lo dejes en blanco</string>
 
     <string-array name="titulo">
-        <item>Acceso a Datos</item>
-        <item>Android Studio</item>
-        <item>Desarrollo de Interfaces</item>
+        <item>Programación</item>
+        <item>Harry Potter</item>
+        <item>Ciencia</item>
         <item>Pokemon</item>
     </string-array>
+
+
 </resources>

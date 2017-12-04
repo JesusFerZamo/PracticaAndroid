@@ -1,8 +1,8 @@
 package com.example.jesus.practicaandroid;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -11,20 +11,20 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class TerceraPantalla extends AppCompatActivity {
+public class CuartaPantalla extends AppCompatActivity {
 
     RadioGroup rd1;
     RadioGroup rd3;
     RadioGroup rd4;
 
     Button btnAcep1;
-    RadioButton rb1_1;
-    CheckBox ch1;
-    CheckBox ch2;
-    CheckBox ch3;
-    CheckBox ch4;
-    RadioButton rb2_1;
-    RadioButton rb3_4;
+    RadioButton rb1_3h;
+    CheckBox ch1h;
+    CheckBox ch2h;
+    CheckBox ch3h;
+    CheckBox ch4h;
+    RadioButton rb2_2h;
+    RadioButton rb3_1h;
     TextView lblPreg1;
 
     Integer correcta = 0;
@@ -40,7 +40,7 @@ public class TerceraPantalla extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tercera_pantalla);
+        setContentView(R.layout.activity_cuarta_pantalla);
         nombre = getIntent().getStringExtra("nombre");
         iniciarUI();
     }
@@ -50,13 +50,13 @@ public class TerceraPantalla extends AppCompatActivity {
         rd3 = (RadioGroup) findViewById(R.id.rd3);
         rd4 = (RadioGroup) findViewById(R.id.rd4);
         btnAcep1 = (Button) findViewById(R.id.btnAcep);
-        rb1_1 = (RadioButton) findViewById(R.id.rb1_1);
-        ch1 = (CheckBox) findViewById(R.id.ch1);
-        ch2 = (CheckBox) findViewById(R.id.ch2);
-        ch3 = (CheckBox) findViewById(R.id.ch3);
-        ch4 = (CheckBox) findViewById(R.id.ch4);
-        rb2_1 = (RadioButton) findViewById(R.id.rb2_1);
-        rb3_4 = (RadioButton) findViewById(R.id.rb3_4);
+        rb1_3h = (RadioButton) findViewById(R.id.rb1_3h);
+        ch1h = (CheckBox) findViewById(R.id.ch1h);
+        ch2h = (CheckBox) findViewById(R.id.ch2h);
+        ch3h = (CheckBox) findViewById(R.id.ch3h);
+        ch4h = (CheckBox) findViewById(R.id.ch4h);
+        rb2_2h = (RadioButton) findViewById(R.id.rb2_2h);
+        rb3_1h = (RadioButton) findViewById(R.id.rb3_1h);
         lblPreg1 = (TextView) findViewById(R.id.lblTest1);
     }
 
@@ -64,34 +64,34 @@ public class TerceraPantalla extends AppCompatActivity {
         correcta = 0;
         incorrecta = 0;
         txtSelec = getString(R.string.txtSelec);
-        if (rb1_1.isChecked()){
+        if (rb1_3h.isChecked()){
             correcta += 1;
         }
         else{
             incorrecta += 1;
         }
-        if (ch3.isChecked() && ch4.isChecked() ){
-            correcta += 1;
-        }
-        else{
-            incorrecta += 1;
-        }
-
-        if (rb2_1.isChecked()) {
+        if (ch2h.isChecked() && ch3h.isChecked() ){
             correcta += 1;
         }
         else{
             incorrecta += 1;
         }
 
-        if (rb3_4.isChecked()){
+        if (rb2_2h.isChecked()) {
             correcta += 1;
         }
         else{
             incorrecta += 1;
         }
 
-        if ((rd1.getCheckedRadioButtonId() == -1) || (rd3.getCheckedRadioButtonId() == -1)  || (rd4.getCheckedRadioButtonId() == -1) || ((!ch1.isChecked()) && (!ch2.isChecked()) && (!ch3.isChecked()) && (!ch4.isChecked())))
+        if (rb3_1h.isChecked()){
+            correcta += 1;
+        }
+        else{
+            incorrecta += 1;
+        }
+
+        if ((rd1.getCheckedRadioButtonId() == -1) || (rd3.getCheckedRadioButtonId() == -1)  || (rd4.getCheckedRadioButtonId() == -1) || ((!ch1h.isChecked()) && (!ch2h.isChecked()) && (!ch3h.isChecked()) && (!ch4h.isChecked())))
         {
             Toast.makeText(this, txtSelec, Toast.LENGTH_SHORT).show();
         }
