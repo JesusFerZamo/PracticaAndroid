@@ -61,6 +61,11 @@ public class SegundaPantalla extends AppCompatActivity {
                             Intent inten3 = new Intent(view.getContext(), QuintaPantalla.class);
                             inten3.putExtra("nombre",nombre);
                             startActivity(inten3);
+                        } else if (position == 3) {
+                            // Abre una nueva Activity:
+                            Intent inten4 = new Intent(view.getContext(), SextaPantalla.class);
+                            inten4.putExtra("nombre",nombre);
+                            startActivity(inten4);
                         }
                     }
                 }
