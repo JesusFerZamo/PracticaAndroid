@@ -32,12 +32,14 @@
             android:id="@+id/lblCorrec"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:text="@string/lblCorrec" />
 
         <TextView
             android:id="@+id/lblIncorrec"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:text="@string/lblIncorrec" />
 
         <LinearLayout
@@ -50,6 +52,7 @@
                 android:id="@+id/lblVolver"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:layout_weight="1"
                 android:text="@string/lblVolver" />
 
@@ -57,6 +60,7 @@
                 android:id="@+id/btnVolver"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
                 android:layout_weight="1"
                 android:onClick="pulsaTest"
                 android:text="@string/btnVolver" />
@@ -72,6 +76,7 @@
                 android:id="@+id/lblUrl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:layout_weight="1"
                 android:text="@string/lblUrl" />
 
@@ -79,6 +84,7 @@
                 android:id="@+id/btnUrl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
                 android:layout_weight="1"
                 android:onClick="pulsaSoluciones"
                 android:text="@string/btnUrl" />

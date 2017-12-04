@@ -37,6 +37,4 @@ public class PrimeraPantalla extends AppCompatActivity {
             startActivity(intencion);
         }
     }
-
-    //Tenemos que añadir imagen
 }

@@ -9,9 +9,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/logo"
         android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgPrinci"
+            android:layout_width="match_parent"
+            android:layout_height="207dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/logo" />
 
         <TextView
             android:id="@+id/lblUsu"
@@ -19,7 +26,6 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
-            android:layout_marginTop="200dp"
             android:gravity="center_horizontal"
             android:text="@string/lblUsu"
             android:textSize="18sp" />
@@ -41,6 +47,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/txtUsu"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
             android:onClick="pulsaAcep"
             android:text="@string/btnAcep" />
     </LinearLayout>
