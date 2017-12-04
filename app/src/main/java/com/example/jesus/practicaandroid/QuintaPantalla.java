@@ -25,7 +25,7 @@ public class QuintaPantalla extends AppCompatActivity {
     CheckBox ch4c;
     RadioButton rb2_3c;
     RadioButton rb3_2c;
-    TextView lblPreg1;
+    TextView lblTest1c;
 
     Integer correcta = 0;
     Integer incorrecta = 0;
@@ -34,6 +34,7 @@ public class QuintaPantalla extends AppCompatActivity {
     String txtBien;
     String txtMal;
     String txtSelec;
+    String titulo;
 
     static String nombre;
 
@@ -57,7 +58,7 @@ public class QuintaPantalla extends AppCompatActivity {
         ch4c = (CheckBox) findViewById(R.id.ch4c);
         rb2_3c = (RadioButton) findViewById(R.id.rb2_3c);
         rb3_2c = (RadioButton) findViewById(R.id.rb3_2c);
-        lblPreg1 = (TextView) findViewById(R.id.lblTest1);
+        lblTest1c = (TextView) findViewById(R.id.lblTest1c);
     }
 
     public void pulsaAcep(View v){
@@ -106,9 +107,11 @@ public class QuintaPantalla extends AppCompatActivity {
                 Toast.makeText(this, txtMal, Toast.LENGTH_SHORT).show();
             }
 
+            titulo = getString(R.string.lblTest1c);
             correc = String.valueOf(correcta);
             incorrec = String.valueOf(incorrecta);
             Intent intencion = new Intent(getApplicationContext(),UltimaPantalla.class);
+            intencion.putExtra("titulo",titulo);
             intencion.putExtra("nombre",nombre);
             intencion.putExtra("correcta",correc);
             intencion.putExtra("incorrecta",incorrec);

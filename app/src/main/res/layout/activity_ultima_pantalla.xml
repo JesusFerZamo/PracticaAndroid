@@ -12,10 +12,9 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/lblTest1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/lblTest1"
             android:textSize="18sp" />
 
         <TextView
@@ -87,6 +86,7 @@
                 style="@style/btnUsuario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:layout_marginRight="20dp"
                 android:layout_weight="1"
                 android:onClick="pulsaUsuario"
@@ -113,7 +113,7 @@
                 style="@style/btnUrl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="20dp"
+                android:layout_marginRight="21dp"
                 android:layout_weight="1"
                 android:onClick="pulsaSoluciones"
                 android:text="@string/btnUrl" />
