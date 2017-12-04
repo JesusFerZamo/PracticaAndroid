@@ -24,6 +24,7 @@ public class SegundaPantalla extends AppCompatActivity {
         iniciarUI();
         lblUsu.setText(nombre);
     }
+    //Solucionado el array de strings
     public void iniciarUI(){
         String[] titulo = getResources().getStringArray(R.array.titulo);
 
