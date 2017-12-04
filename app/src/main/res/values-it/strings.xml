@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Practica Android</string>
+    <string name="app_name">QuizApp</string>
     <string name="btnUrl">SOLUZIONE</string>
     <string name="btnVolver">PROVA</string>
     <string name="lblUrl">Clicca qui per vedere le soluzioni</string>

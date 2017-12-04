@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Practica Android</string>
+    <string name="app_name">QuizApp</string>
     <string name="lblPreg1">¿Los programas en Java se pueden construir mediante estructuras repetitivas, selectivas y ...?</string>
     <string name="lblPreg2">Selecciona los lenguajes orientados a objetos:</string>
     <string name="lblPreg3">¿Es Java un lenguaje orientado a objetos?</string>
