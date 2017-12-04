@@ -20,7 +20,8 @@
         <activity android:name=".SegundaPantalla" />
         <activity android:name=".UltimaPantalla" />
         <activity android:name=".CuartaPantalla" />
-        <activity android:name=".QuintaPantalla"></activity>
+        <activity android:name=".QuintaPantalla" />
+        <activity android:name=".SextaPantalla"></activity>
     </application>
 
 </manifest>

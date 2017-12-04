@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jesus.practicaandroid.QuintaPantalla">
+    tools:context="com.example.jesus.practicaandroid.SextaPantalla">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -16,19 +16,19 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/lblTest1c"
+                android:id="@+id/lblTest1p"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/lblTest1c"
+                android:text="@string/lblTest1"
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/lblPreg1c"
+                android:id="@+id/lblPreg1p"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="25dp"
-                android:text="@string/lblPreg1c" />
+                android:text="@string/lblPreg1" />
 
             <RadioGroup
                 android:id="@+id/rd1"
@@ -37,79 +37,79 @@
                 android:layout_marginLeft="20dp">
 
                 <RadioButton
-                    android:id="@+id/rb1_1c"
+                    android:id="@+id/rb1_1p"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/rb1_1c" />
+                    android:text="@string/rb1_1" />
 
                 <RadioButton
-                    android:id="@+id/rb1_2c"
+                    android:id="@+id/rb1_2p"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/rb1_2c" />
+                    android:text="@string/rb1_2" />
 
                 <RadioButton
-                    android:id="@+id/rb1_3c"
+                    android:id="@+id/rb1_3p"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/rb1_3c" />
+                    android:text="@string/rb1_3" />
 
                 <RadioButton
-                    android:id="@+id/rb1_4c"
+                    android:id="@+id/rb1_4pç"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/rb1_4c" />
+                    android:text="@string/rb1_4" />
 
             </RadioGroup>
 
             <TextView
-                android:id="@+id/lblPreg2c"
+                android:id="@+id/lblPreg2p"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="25dp"
                 android:layout_weight="1"
-                android:text="@string/lblPreg2c" />
+                android:text="@string/lblPreg2" />
 
             <CheckBox
-                android:id="@+id/ch1c"
+                android:id="@+id/ch1p"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="@string/ch1c" />
+                android:text="@string/ch1" />
 
             <CheckBox
-                android:id="@+id/ch2c"
+                android:id="@+id/ch2p"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="@string/ch2c" />
+                android:text="@string/ch2" />
 
             <CheckBox
-                android:id="@+id/ch3c"
+                android:id="@+id/ch3p"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="@string/ch3c" />
+                android:text="@string/ch3" />
 
             <CheckBox
-                android:id="@+id/ch4c"
+                android:id="@+id/ch4p"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="@string/ch4c" />
+                android:text="@string/ch4" />
 
             <TextView
-                android:id="@+id/lblPreg3c"
+                android:id="@+id/lblPreg3p"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="25dp"
-                android:text="@string/lblPreg3c" />
+                android:text="@string/lblPreg3" />
 
             <RadioGroup
                 android:id="@+id/rd3"
@@ -118,41 +118,41 @@
                 android:layout_marginLeft="20dp">
 
                 <RadioButton
-                    android:id="@+id/rb2_1c"
+                    android:id="@+id/rb2_1p"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/rb2_1c" />
+                    android:text="@string/rb2_1" />
 
                 <RadioButton
-                    android:id="@+id/rb2_2c"
+                    android:id="@+id/rb2_2p"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/rb2_2c" />
+                    android:text="@string/rb2_2" />
 
                 <RadioButton
-                    android:id="@+id/rb2_3c"
+                    android:id="@+id/rb2_3p"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/rb2_3c" />
+                    android:text="@string/rb2_3" />
 
                 <RadioButton
-                    android:id="@+id/rb2_4c"
+                    android:id="@+id/rb2_4p"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/rb2_4c" />
+                    android:text="@string/rb2_4" />
             </RadioGroup>
 
             <TextView
-                android:id="@+id/lblPreg4c"
+                android:id="@+id/lblPreg4p"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="25dp"
-                android:text="@string/lblPreg4c" />
+                android:text="@string/lblPreg4" />
 
             <RadioGroup
                 android:id="@+id/rd4"
@@ -161,32 +161,32 @@
                 android:layout_marginLeft="20dp">
 
                 <RadioButton
-                    android:id="@+id/rb3_1c"
+                    android:id="@+id/rb3_1p"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/rb3_1c" />
+                    android:text="@string/rb3_1" />
 
                 <RadioButton
-                    android:id="@+id/rb3_2c"
+                    android:id="@+id/rb3_2p"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/rb3_2c" />
+                    android:text="@string/rb3_2" />
 
                 <RadioButton
-                    android:id="@+id/rb3_3c"
+                    android:id="@+id/rb3_3p"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/rb3_3c" />
+                    android:text="@string/rb3_3" />
 
                 <RadioButton
-                    android:id="@+id/rb3_4c"
+                    android:id="@+id/rb3_4p"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/rb3_4c" />
+                    android:text="@string/rb3_4" />
             </RadioGroup>
 
             <Button

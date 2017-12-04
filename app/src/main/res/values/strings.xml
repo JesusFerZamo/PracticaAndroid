@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Practica Android</string>
     <string name="lblPreg1">¿Los programas en Java se pueden construir mediante estructuras repetitivas, selectivas y ...?</string>
-    <string name="lblPreg2">¿?</string>
+    <string name="lblPreg2">Selecciona los lenguajes orientados a objetos:</string>
     <string name="lblPreg3">¿Es Java un lenguaje orientado a objetos?</string>
     <string name="lblPreg4">¿Cuál es la precisión de un tipo de dato long?</string>
 
@@ -9,6 +9,11 @@
     <string name="rb1_2">Algorítmicas</string>
     <string name="rb1_3">Logarítmicas</string>
     <string name="rb1_4">De cálculo</string>
+
+    <string name="ch1">C++</string>
+    <string name="ch2">Pauscal</string>
+    <string name="ch3">Ruby</string>
+    <string name="ch4">Python</string>
 
     <string name="rb2_1">Sí</string>
     <string name="rb2_2">No</string>
@@ -74,22 +79,40 @@
     <string name="rb3_4c">Kubala</string>
 
 
-    <string name="ch1">Java</string>
-    <string name="ch2">C++</string>
-    <string name="ch3">CSS</string>
-    <string name="ch4">HTML</string>
-    <string name="rb7">Sí</string>
-    <string name="rb8">No</string>
-    <string name="rb9">Tal vez</string>
-    <string name="rb10">Sí</string>
-    <string name="rb11">No</string>
-    <string name="rb12">Tal vez</string>
-    <string name="btnAcep">ACEPTAR</string>
+    <string name="lblPreg1p">Los Pokémon legendarios siempre tienen unas estadísticas base de...</string>
+    <string name="lblPreg2p">Elige los pokemons que aparecen en la segunda generación:</string>
+    <string name="lblPreg3p">En 2008 unos científicos descubrieron una nueva proteína y decidieron llamarla…</string>
+    <string name="lblPreg4p">El primer Pokémon que se creó fue…</string>
+
+
+    <string name="rb1_1p">580</string>
+    <string name="rb1_2p">480</string>
+    <string name="rb1_3p">100</string>
+    <string name="rb1_4p">1000</string>
+
+
+    <string name="ch1p">Bulbasur</string>
+    <string name="ch2p">Mew</string>
+    <string name="ch3p">Treecko</string>
+    <string name="ch4p">Tyranitar</string>
+
+    <string name="rb2_1p">Pokémonita</string>
+    <string name="rb2_2p">Pikachurin</string>
+    <string name="rb2_3p">Pikachunol</string>
+    <string name="rb2_4p">Pokémonol</string>
+
+    <string name="rb3_1p">Pikachu</string>
+    <string name="rb3_2p">Rhydon</string>
+    <string name="rb3_3p">Bulbasur</string>
+    <string name="rb3_4p">Snorlax</string>
+
 
     <string name="lblUsu">Introduzca su nombre de usuario</string>
     <string name="lblPrinci">Selecciona el test que desee realizar</string>
     <string name="lblTest1">Test de Programación</string>
     <string name="lblTest1h">Test de Harry Potter</string>
+    <string name="lblTest1c">Test de Ciencia</string>
+    <string name="lblTest1p">Test de Pokemon</string>
 
     <string name="lblUsuFinal">Usuario</string>
     <string name="lblCorrec">Correctas</string>
