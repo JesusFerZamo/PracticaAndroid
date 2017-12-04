@@ -46,6 +46,7 @@ public class UltimaPantalla extends AppCompatActivity {
     }
 
     public void pulsaUsuario(View v){
+        //Para pasar a la primera pantalla
         Intent inten = new Intent(getApplicationContext(),PrimeraPantalla.class);
         startActivity(inten);
     }
