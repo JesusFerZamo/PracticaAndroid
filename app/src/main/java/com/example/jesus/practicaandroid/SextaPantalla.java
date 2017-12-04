@@ -25,7 +25,7 @@ public class SextaPantalla extends AppCompatActivity {
     CheckBox ch4p;
     RadioButton rb2_2p;
     RadioButton rb3_2p;
-    TextView lblPreg1;
+    TextView lblTest1p;
 
     Integer correcta = 0;
     Integer incorrecta = 0;
@@ -34,6 +34,7 @@ public class SextaPantalla extends AppCompatActivity {
     String txtBien;
     String txtMal;
     String txtSelec;
+    String titulo;
 
     static String nombre;
 
@@ -57,7 +58,7 @@ public class SextaPantalla extends AppCompatActivity {
         ch4p = (CheckBox) findViewById(R.id.ch4p);
         rb2_2p = (RadioButton) findViewById(R.id.rb2_2p);
         rb3_2p = (RadioButton) findViewById(R.id.rb3_2p);
-        lblPreg1 = (TextView) findViewById(R.id.lblTest1);
+        lblTest1p = (TextView) findViewById(R.id.lblTest1p);
     }
 
     public void pulsaAcep(View v){
@@ -106,19 +107,16 @@ public class SextaPantalla extends AppCompatActivity {
                 Toast.makeText(this, txtMal, Toast.LENGTH_SHORT).show();
             }
 
+            titulo = getString(R.string.lblTest1p);
             correc = String.valueOf(correcta);
             incorrec = String.valueOf(incorrecta);
             Intent intencion = new Intent(getApplicationContext(),UltimaPantalla.class);
+            intencion.putExtra("titulo",titulo);
             intencion.putExtra("nombre",nombre);
             intencion.putExtra("correcta",correc);
             intencion.putExtra("incorrecta",incorrec);
             startActivity(intencion);
 
-
         }
-
-
-        //Toast.makeText(this, "Tienes "+correcta+" preguntas correctas y "+incorrecta+ " preguntas incorrectas", Toast.LENGTH_SHORT).show();
-
     }
 }

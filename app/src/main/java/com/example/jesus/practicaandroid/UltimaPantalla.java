@@ -10,28 +10,34 @@ import android.widget.TextView;
 
 public class UltimaPantalla extends AppCompatActivity {
 
+    TextView lblTest1;
     TextView lblUsu;
     TextView lblCorrecta;
     TextView lblIncorrecta;
     Button btnVolver;
     Button btnUrl;
     String nombre;
+    String titulo;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ultima_pantalla);
 
+        titulo = getIntent().getStringExtra("titulo");
         nombre = getIntent().getStringExtra("nombre");
         String correcta = getIntent().getStringExtra("correcta");
         String incorrecta = getIntent().getStringExtra("incorrecta");
 
         iniciarUI();
+
+        lblTest1.setText(titulo);
         lblUsu.setText(nombre);
         lblCorrecta.append(" " + correcta);
         lblIncorrecta.append(" " + incorrecta);
     }
 
     public void iniciarUI() {
+        lblTest1 = (TextView) findViewById(R.id.lblTest1);
         lblUsu = (TextView) findViewById(R.id.lblUsuario);
         lblCorrecta = (TextView) findViewById(R.id.lblCorrec);
         lblIncorrecta = (TextView) findViewById(R.id.lblIncorrec);
